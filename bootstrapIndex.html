@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="bootstrapApp.js"></script>
+</head>
+<body>
+
+
+	<form action="javascript:void(0);">
+		<label for="Movie">Search: </label>
+		<input type="input" name="movie" id="movie" placeholder="Movie?">
+		<input type="submit" value="Begin Search!" value="Get Movie">
+	</form>
+	<div class="container">
+	<script id="movie-template" type="text/x-handlebars-template">
+	<ul id="results">
+		{{#each movieData.Search}}</li>
+			<li>{{Title}}</li>
+		{{/each}}
+	</ul>
+	</div>
+	</script>
+	
+
+</body>
+</html>

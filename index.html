@@ -6,13 +6,17 @@
 </head>
 <body>
 
-	<form action="javascript:void(0);">
-		<label for="Movie">Search: </label>
-		<input type="input" name="movie" id="movie" placeholder="Movie?">
-		<input type="submit" value"Begin Search!" value="Get Movie">
-	</form>
-	<ol></ol>
+	<div class="container"></div>
+		
+	<script id="movie-template" type="text/x-handlebars-template">
+	<ul>
+		<li>{{movieData.Title}}</li>
+	</ul>
+
+	</script>
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
